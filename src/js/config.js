@@ -5,13 +5,13 @@ function Config ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url: '/home',
-      templateUrl: 'templates/index.html',
-      // controller: 'ShelterController'
+      templateUrl: 'templates/home.tpl.html',
+      controller: 'AllContactsController'
     })
     .state('contact-new', {
       url: '/contacts/new',
       templateUrl: 'templates/contact-add.tpl.html',
-      // controller: 'ShelterController'
+      controller: 'ContactAddController'
     })
     // .state('shelter', {
     //   url: '/shelters',
