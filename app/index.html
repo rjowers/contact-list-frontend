@@ -7,10 +7,27 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
-    <div class="container">
-      <p>Welcome to your life.</p>
+  <div class ="containter" ui-view>
+  <body ng-app="contact-app">
+    <a class="new-contact" href="#!/contacts/new">Click here to add a contact </a>
+
+    <div class="contactstop">
+      <h1>My Contacts</h1>
+    </div>
+    <ul class="contacts">
+  <li ng-repeat="contact in contacts">
+  </li>
+  </ul>
+
     </div>
     <script src="js/bundle.js"></script>
   </body>
 </html>
+
+
+<!-- <div class="container">
+  <div class="headbox">
+  <p class="arrow"><--</p>
+    <img class="head" src="images/face-empty.png"></img>
+
+  </div> -->
