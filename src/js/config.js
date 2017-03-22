@@ -1,6 +1,6 @@
 function Config ($stateProvider, $urlRouterProvider) {
-  console.log($stateProvider);
-  console.log($urlRouterProvider);
+  // console.log($stateProvider);
+  // console.log($urlRouterProvider);
 
   $stateProvider
     .state('home', {
@@ -12,6 +12,11 @@ function Config ($stateProvider, $urlRouterProvider) {
       url: '/contacts/new',
       templateUrl: 'templates/contact-add.tpl.html',
       controller: 'ContactAddController'
+    })
+    .state('contact',{
+      url: '/contacts/contact/:id',
+      templateUrl:'templates/contact.tpl.html',
+      controller: 'SingleContactController',
     })
     // .state('shelter', {
     //   url: '/shelters',

@@ -5,7 +5,8 @@
 </div>
 <ul class="contacts">
 <li ng-repeat="contact in contacts">
-<p>{{contact.name}}<p>
+<a href='#!/contacts/contact/{{ contact.id }}'>
+<p>{{contact.name}}<p></a>
 <!-- <p>{{contact.phonenumber}}</p>
 <p>{{contact.city}}</p>
 <p>{{contact.state}}</p> -->
