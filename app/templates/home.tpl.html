@@ -4,9 +4,8 @@
   <h1>My Contacts</h1>
 </div>
 <ul class="contacts">
-<li ng-repeat="contact in contacts">
-<a href='#!/contacts/contact/{{ contact.id }}'>
-<p>{{contact.name}}<p></a>
+<li class="contact-list" ng-repeat="contact in contacts">
+<a class="contact-link"href='#!/contacts/contact/{{ contact.id }}'><p>{{contact.name}}</p></a>
 <!-- <p>{{contact.phonenumber}}</p>
 <p>{{contact.city}}</p>
 <p>{{contact.state}}</p> -->
